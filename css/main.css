@@ -12,11 +12,12 @@
 .main-container {
   width: 100%;
   padding: 5% 0;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   background: linear-gradient(#000 50%, #333);
   color: white;
   overflow-x: hidden;
   scrollbar-width: 0px;
+  position: relative;
 }
 
 .main-header {
@@ -27,6 +28,20 @@
   background-position: center;
   margin-bottom: 75px;
 }
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
 .main-header-navbar {
   width: 100%;
   display: flex;
@@ -66,7 +81,7 @@
   color: #a2a2a2;
 }
 .main-header-navbar__login__register-btn {
-  width: 60%;
+  margin-left: 1rem;
   padding: 9px 10px;
   background-color: #666;
   color: #fff;
@@ -218,9 +233,13 @@
 }
 .main-content .why-us-wrapper {
   width: 100%;
-  background-image: url(../assets/why-us-section-assets/why-us-pattern1.png), url(../assets/why-us-section-assets/why-us-pattern2.png), url(../assets/why-us-section-assets/why-us-pattern3.png);
+  background-image: url(../assets/why-us-section-assets/why-us-pattern1.png),
+    url(../assets/why-us-section-assets/why-us-pattern2.png), url(../assets/why-us-section-assets/why-us-pattern3.png);
   background-repeat: no-repeat;
-  background-position: left center, right bottom, right top;
+  background-position:
+    left center,
+    right bottom,
+    right top;
   background-size: 250px;
   display: flex;
   flex-flow: row wrap;
@@ -396,4 +415,4 @@
   .main-content .why-us-wrapper {
     flex-flow: column nowrap;
   }
-  }
+}
