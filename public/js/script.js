@@ -1,4 +1,4 @@
-mixpanel.init('5a8da846668c085a06c8e7fdeeff13f8', {debug: true, track_pageview: true, persistence: 'localStorage'});
+mixpanel.init(window.env.MIXPANEL_ACCESS_CODE, {debug: true, track_pageview: true, persistence: 'localStorage'});
 
 document.addEventListener("DOMContentLoaded", function() {
     mixpanel.track("Page Viewed", {
