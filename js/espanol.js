@@ -1,4 +1,4 @@
-mixpanel.init(window.env.MIXPANEL_ACCESS_CODE, { debug: false, track_pageview: false, persistence: 'localStorage' });
+mixpanel.init('5a8da846668c085a06c8e7fdeeff13f8', { debug: false, track_pageview: false, persistence: 'localStorage' });
 
 document.addEventListener("DOMContentLoaded", function() {
     mixpanel.track("Spanish Page Viewed", {
